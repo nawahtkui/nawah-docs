@@ -13,10 +13,6 @@
 **Nawah** bridges cultural heritage and modern innovation, creating a digital ecosystem that celebrates creativity, equity, and empowerment.  
 **نواة** تجسر بين التراث الثقافي والابتكار الحديث لبناء نظام رقمي يحتفي بالإبداع والعدالة والتمكين.
 
-## ⚡ How to Publish
-1. Upload all files to your repository.
-2. Enable GitHub Pages in Settings → Pages → Source: `main` branch → `/ (root)`.
-3. Visit: `https://nawahtkui.github.io/nawah-docs/`
 
-## 🖼 Assets
-- Place the project logo in `/assets/nawah-logo.png`.
+##. Visit: `https://nawahtkui.github.io/nawah-docs/`
+
