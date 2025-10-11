@@ -13,6 +13,6 @@
 **Nawah** bridges cultural heritage and modern innovation, creating a digital ecosystem that celebrates creativity, equity, and empowerment.  
 **نواة** تجسر بين التراث الثقافي والابتكار الحديث لبناء نظام رقمي يحتفي بالإبداع والعدالة والتمكين.
 
-
-  `https://nawahtkui.github.io/nawah-docs/`
+ `https://nawahtkui.github.io/nawah-docs/`
+ 
 
