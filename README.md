@@ -54,8 +54,5 @@ This repository is fully bilingual. Each section is available in **English** and
 - الملفات العربية: `index-ar.md`  
 - حافظ على نفس هيكل الملفات لضمان عمل الروابط بشكل صحيح.
 
-## Sections / الأقسام
-
-- [Philosophy & Direction](docs/philosophy-and-direction/index.md) / [الفلسفة والاتجاه](docs/philosophy-and-direction/index-ar.md)
-
+- [Section Title](docs/example-section/index.md) / [عنوان القسم](docs/example-section/index-ar.md)
 
