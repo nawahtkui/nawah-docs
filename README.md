@@ -1,76 +1,14 @@
-# 🌸 Nawah Token Documentation (NWTK) | توثيق مشروع نواة
+# Nawah Docs
 
-**Official GitHub repository** for Nawah Token (NWTK) — a cultural and technological initiative empowering women and youth through blockchain, NFTs, and decentralized innovation.
+Welcome to the official documentation of the Nawah project.
 
-## 🔗 Quick Links / الروابط السريعة
-- [📘 Whitepaper / الورقة البيضاء](whitepaper.md)
-- [📊 Tokenomics / نموذج التوزيع](tokenomics.md)
-- [🔐 Security / الأمان والتحقق](security.md)
-- [🗺️ Roadmap / خارطة الطريق](roadmap.md)
-- [🎨 NFTs & Digital Art / الرموز والفن الرقمي](nfts.md)
+This repository is fully bilingual. Each section is available in **English** and **Arabic**.
 
-## 🌍 Vision / الرؤية
-**Nawah** bridges cultural heritage and modern innovation, creating a digital ecosystem that celebrates creativity, equity, and empowerment.  
-**نواة** تجسر بين التراث الثقافي والابتكار الحديث لبناء نظام رقمي يحتفي بالإبداع والعدالة والتمكين.
+## Contents / المحتوى
 
- `https://nawahtkui.github.io/nawah-docs/`
- 
-# Nawah Infrastructure – Design & Pattern Reference
-
-## لماذا هذا المستودع موجود؟
-هذا المستودع ليس منتجًا، وليس موقعًا عامًا، ولا جزءًا مباشرًا من مشروع نواة.
-
-هو **مرجع داخلي صامت** يهدف إلى:
-- توحيد لغة التصميم
-- تقليل التكرار
-- منع كسر الهوية
-- تسريع بناء الصفحات
-- تقليل النقاشات غير الضرورية
-
-وجوده يعني أن أي واجهة جديدة تُبنى **بنفس العقل**، حتى لو تغيّر الأشخاص أو الزمن.
-
----
-
-## ما الذي يحتويه هذا المستودع؟
-هذا المستودع يحتوي على:
-- أنماط واجهات متكررة (Patterns)
-- قواعد تصميم أساسية (Design Tokens)
-- توثيق متى ولماذا نستخدم كل نمط
-
-لا يحتوي على:
-- تسويق
-- صفحات عامة
-- Branding مستقل
-- منطق تجاري
-
----
-
-## ما الذي لا نحاول فعله هنا؟
-❌ لسنا نبني Design System ضخم  
-❌ لسنا ننافس مكتبات UI  
-❌ لسنا نوثق كل شيء  
-❌ لسنا نُرضي كل السيناريوهات  
-
-هذا المستودع يخدم **ما يتكرر فقط**.
-
----
-
-## متى نضيف Pattern جديد؟
-نضيف Pattern فقط إذا:
-- استُخدم أكثر من مرتين
-- أو سيُستخدم في أكثر من صفحة
-- أو يمنع تكرار قرار تصميم
-
-لا نضيف Pattern من أجل:
-- التجربة
-- التنوع
-- الجمال فقط
-
----
-
-## بنية المستودع
-```txt
-patterns/   → أنماط الواجهات المتكررة
-tokens/     → القواعد الثابتة (ألوان، مسافات، خطوط)
-README.md   → المرجع العقلي
-
+1. [Philosophy & Direction](philosophy-and-direction/index.md) / [الفلسفة والاتجاه](philosophy-and-direction/index-ar.md)
+2. [Whitepaper](whitepaper/whitepaper.md) / [الوثيقة البيضاء](whitepaper/whitepaper-ar.md)
+3. [Tokenomics](tokenomics/tokenomics.md) / [توزيع التوكنات](tokenomics/tokenomics-ar.md)
+4. [Roadmap](roadmap/roadmap.md) / [خارطة الطريق](roadmap/roadmap-ar.md)
+5. [Security](security/security.md) / [الأمان](security/security-ar.md)
+6. [NFTs](nfts/nfts.md) / [NFTs](nfts/nfts-ar.md)
