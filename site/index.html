@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>نواة - مستندات ثنائية اللغة</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 2rem; }
+.tab { display: inline-block; margin-right: 1rem; cursor: pointer; padding: 0.5rem 1rem; background: #eee; border-radius: 5px; }
+.tab.active { background: #4CAF50; color: white; }
+.section { display: none; margin-top: 1rem; }
+.section.active { display: block; }
+a { text-decoration: none; color: #1a0dab; }
+</style>
+</head>
+<body>
+
+<h1>نواة - مستندات ثنائية اللغة</h1>
+<div>
+<span class="tab active" onclick="showSection('en')">🇬🇧 English</span>
+<span class="tab" onclick="showSection('ar')">🇸🇦 العربية</span>
+</div>
+
+<div id="en" class="section active">
+<h2>English Documents</h2>
+<ul>
+<li><a href="https://nawahtkui.github.io/nawah-docs/philosophy-and-direction/index.md" target="_blank">index</a></li>
+</ul>
+</div>
+<div id="ar" class="section">
+<h2>المستندات بالعربية</h2>
+<ul>
+<li><a href="https://nawahtkui.github.io/nawah-docs/philosophy-and-direction/index-ar.md" target="_blank">index</a></li>
+</ul>
+</div>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelector(`[onclick="showSection('${id}')"]`).classList.add('active');
+}
+</script>
+
+</body>
+</html>
