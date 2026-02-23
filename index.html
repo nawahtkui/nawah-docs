@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+
+# 2. احذف المحتوى القديم والصق الكود الجديد بالكامل
+# (Ctrl + A لتحديد الكل، ثم حذف، ثم لصق)
+
+# 3. احفظ واخرج
+# Ctrl + O, Enter, Ctrl + X
+
+# 4. ارفع التغييرات
+git add index.html
+git commit -m "تحديث كامل للصفحة الرئيسية مع روابط علوية تعمل"
+git push origin main<!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
@@ -97,12 +107,16 @@ a:hover {
 </head>
 <body>
 
+<div style="text-align: center; margin: 20px 0;">
+  <img src="assets/logos/nawah-logo-main.png" alt="شعار نواة" style="max-width: 180px; height: auto; border-radius: 10px;">
+</div>
+
 <div class="nav-links">
-  <a href="../philosophy/index.html">الفلسفة</a> |
-  <a href="../tokenomics/index.html">الرموز</a> |
-  <a href="../security/index.html">الأمان</a> |
-  <a href="../whitepaper/index.html">الوثيقة البيضاء</a> |
-  <a href="https://github.com/nawahtkui/nawah-docs">GitHub</a>
+  <a href="docs/philosophy-and-direction/index-ar.md">📜 الفلسفة</a> |
+  <a href="tokenomics.md">💰 الرموز</a> |
+  <a href="security.md">🔒 الأمان</a> |
+  <a href="whitepaper.md">📄 الوثيقة البيضاء</a> |
+  <a href="https://github.com/nawahtkui/nawah-docs">📦 GitHub</a>
 </div>
 
 <h1>📚 منصة نواة - التوثيق الرسمي</h1>
