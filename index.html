@@ -1,46 +1,250 @@
-<nav>
-<a href="../philosophy/index.html">English</a> |
-<a href="../philosophy/index-ar.html">العربية</a> |
-<a href="../tokenomics/index.html">Tokenomics</a> |
-<a href="../tokenomics/index-ar.html">الرموز</a> |
-<a href="../security/index.html">Security</a> |
-<a href="../security/index-ar.html">الأمان</a> |
-<a href="../whitepaper/index.html">Whitepaper</a> |
-<a href="../whitepaper/index-ar.html">الوثيقة البيضاء</a>
-</nav>
-<hr><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>نواة - مستندات ثنائية اللغة</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نواة - التوثيق الرسمي</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 2rem; }
-.tab { display: inline-block; margin-right: 1rem; cursor: pointer; padding: 0.5rem 1rem; background: #eee; border-radius: 5px; }
-.tab.active { background: #4CAF50; color: white; }
-.section { display: none; margin-top: 1rem; }
+body { 
+  font-family: 'Cairo', 'Arial', sans-serif; 
+  margin: 2rem; 
+  direction: rtl;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+h1 { color: #0A66C2; border-bottom: 2px solid #0A66C2; padding-bottom: 10px; }
+h2 { color: #10B981; margin-top: 30px; }
+.tab { 
+  display: inline-block; 
+  margin-left: 1rem; 
+  cursor: pointer; 
+  padding: 0.5rem 1.5rem; 
+  background: #eee; 
+  border-radius: 30px; 
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.tab.active { 
+  background: #0A66C2; 
+  color: white; 
+}
+.section { display: none; margin-top: 2rem; }
 .section.active { display: block; }
-a { text-decoration: none; color: #1a0dab; }
+a { 
+  text-decoration: none; 
+  color: #0A66C2;
+  display: block;
+  padding: 8px 12px;
+  margin: 5px 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+a:hover { 
+  transform: translateX(5px);
+  background: #e6f0ff;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.category {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.category h3 {
+  color: #10B981;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+.nav-links {
+  background: #0A66C2;
+  padding: 15px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.nav-links a {
+  display: inline-block;
+  color: white;
+  background: transparent;
+  box-shadow: none;
+  margin: 0 10px;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.nav-links a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: none;
+}
 </style>
 </head>
 <body>
 
-<h1>نواة - مستندات ثنائية اللغة</h1>
-<div>
-<span class="tab active" onclick="showSection('en')">🇬🇧 English</span>
-<span class="tab" onclick="showSection('ar')">🇸🇦 العربية</span>
+<div class="nav-links">
+  <a href="../philosophy/index.html">الفلسفة</a> |
+  <a href="../tokenomics/index.html">الرموز</a> |
+  <a href="../security/index.html">الأمان</a> |
+  <a href="../whitepaper/index.html">الوثيقة البيضاء</a> |
+  <a href="https://github.com/nawahtkui/nawah-docs">GitHub</a>
 </div>
 
-<div id="en" class="section active">
-<h2>English Documents</h2>
-<ul>
-<li><a href="https://nawahtkui.github.io/nawah-docs/philosophy-and-direction/index.md" target="_blank">index</a></li>
-</ul>
+<h1>📚 منصة نواة - التوثيق الرسمي</h1>
+<p>الوثائق الكاملة للمنصة: الرؤية، العملة الرقمية، NFTs، التراث، والأدلة</p>
+
+<div style="text-align: center; margin: 30px 0;">
+  <span class="tab active" onclick="showSection('ar')">🇸🇦 العربية</span>
+  <span class="tab" onclick="showSection('en')">🇬🇧 English</span>
 </div>
-<div id="ar" class="section">
-<h2>المستندات بالعربية</h2>
-<ul>
-<li><a href="https://nawahtkui.github.io/nawah-docs/philosophy-and-direction/index-ar.md" target="_blank">index</a></li>
-</ul>
+
+<!-- المحتوى العربي -->
+<div id="ar" class="section active">
+
+  <div class="category">
+    <h3>🏠 الرؤية والقيم</h3>
+    <a href="vision.md" target="_blank">vision.md - رؤية ورسالة المنصة</a>
+    <a href="values.md" target="_blank">values.md - القيم الأساسية (المرأة، الشباب، التراث)</a>
+    <a href="roadmap.md" target="_blank">roadmap.md - خارطة الطريق</a>
+  </div>
+
+  <div class="category">
+    <h3>💰 Nawah Token (NWTK)</h3>
+    <a href="whitepaper.md" target="_blank">whitepaper.md - الورقة البيضاء</a>
+    <a href="tokenomics.md" target="_blank">tokenomics.md - اقتصاديات العملة</a>
+    <a href="presale.md" target="_blank">presale.md - البيع المبدئي</a>
+  </div>
+
+  <div class="category">
+    <h3>🎨 NFTs والتراث</h3>
+    <a href="nfts.md" target="_blank">nfts.md - شرح NFTs في نواة</a>
+    <a href="heritage.md" target="_blank">heritage.md - التراث العربي والفنون</a>
+    <a href="marketplace.md" target="_blank">marketplace.md - سوق NFTs</a>
+  </div>
+
+  <div class="category">
+    <h3>🏗️ المنصة والتقنيات</h3>
+    <a href="platform-features.md" target="_blank">platform-features.md - ميزات المنصة</a>
+    <a href="tech-stack.md" target="_blank">tech-stack.md - التقنيات المستخدمة</a>
+    <a href="development-phases.md" target="_blank">development-phases.md - مراحل التطوير</a>
+  </div>
+
+  <div class="category">
+    <h3>👥 المجتمع</h3>
+    <a href="community.md" target="_blank">community.md - خطة بناء المجتمع</a>
+    <a href="events.md" target="_blank">events.md - الفعاليات والمؤتمرات</a>
+    <a href="partnerships.md" target="_blank">partnerships.md - الشراكات</a>
+    <a href="affiliates.md" target="_blank">affiliates.md - نظام الإحالة</a>
+  </div>
+
+  <div class="category">
+    <h3>📖 الأدلة</h3>
+    <a href="user-guide.md" target="_blank">user-guide.md - دليل المستخدم</a>
+    <a href="developer-guide.md" target="_blank">developer-guide.md - دليل المطور</a>
+    <a href="investor-guide.md" target="_blank">investor-guide.md - دليل المستثمر</a>
+  </div>
+
+  <div class="category">
+    <h3>🔧 العقود والمساعدة</h3>
+    <a href="contracts-overview.md" target="_blank">contracts-overview.md - نظرة عامة على العقود الذكية</a>
+    <a href="security.md" target="_blank">security.md - إجراءات الأمان</a>
+    <a href="FAQ.md" target="_blank">FAQ.md - الأسئلة الشائعة</a>
+    <a href="glossary.md" target="_blank">glossary.md - قاموس المصطلحات</a>
+    <a href="CONTRIBUTING.md" target="_blank">CONTRIBUTING.md - كيفية المساهمة</a>
+    <a href="STRUCTURE_GUIDELINES.md" target="_blank">STRUCTURE_GUIDELINES.md - إرشادات الهيكلة</a>
+    <a href="LICENSE" target="_blank">LICENSE - رخصة MIT</a>
+  </div>
+
+  <div class="category">
+    <h3>📄 مستندات إضافية</h3>
+    <a href="index.md" target="_blank">index.md - الصفحة الرئيسية (نسخة Markdown)</a>
+    <a href="README.md" target="_blank">README.md - شرح المستودع</a>
+    <a href="RELEASE_NOTES.md" target="_blank">RELEASE_NOTES.md - سجل الإصدارات</a>
+    <a href="شعار ناواه توكن (NWTK).png" target="_blank">شعار ناواه توكن (NWTK).png</a>
+  </div>
+
+</div>
+
+<!-- المحتوى الإنجليزي -->
+<div id="en" class="section">
+
+  <div class="category">
+    <h3>🏠 Vision & Values</h3>
+    <a href="vision.md" target="_blank">vision.md - Vision and Mission</a>
+    <a href="values.md" target="_blank">values.md - Core Values (Women, Youth, Heritage)</a>
+    <a href="roadmap.md" target="_blank">roadmap.md - Roadmap</a>
+  </div>
+
+  <div class="category">
+    <h3>💰 Nawah Token (NWTK)</h3>
+    <a href="whitepaper.md" target="_blank">whitepaper.md - Whitepaper</a>
+    <a href="tokenomics.md" target="_blank">tokenomics.md - Tokenomics</a>
+    <a href="presale.md" target="_blank">presale.md - Presale Details</a>
+  </div>
+
+  <div class="category">
+    <h3>🎨 NFTs & Heritage</h3>
+    <a href="nfts.md" target="_blank">nfts.md - NFTs at Nawah</a>
+    <a href="heritage.md" target="_blank">heritage.md - Arab Heritage & Arts</a>
+    <a href="marketplace.md" target="_blank">marketplace.md - NFT Marketplace</a>
+  </div>
+
+  <div class="category">
+    <h3>🏗️ Platform & Tech</h3>
+    <a href="platform-features.md" target="_blank">platform-features.md - Platform Features</a>
+    <a href="tech-stack.md" target="_blank">tech-stack.md - Technology Stack</a>
+    <a href="development-phases.md" target="_blank">development-phases.md - Development Phases</a>
+  </div>
+
+  <div class="category">
+    <h3>👥 Community</h3>
+    <a href="community.md" target="_blank">community.md - Community Plan</a>
+    <a href="events.md" target="_blank">events.md - Events & Conferences</a>
+    <a href="partnerships.md" target="_blank">partnerships.md - Partnerships</a>
+    <a href="affiliates.md" target="_blank">affiliates.md - Affiliates Program</a>
+  </div>
+
+  <div class="category">
+    <h3>📖 Guides</h3>
+    <a href="user-guide.md" target="_blank">user-guide.md - User Guide</a>
+    <a href="developer-guide.md" target="_blank">developer-guide.md - Developer Guide</a>
+    <a href="investor-guide.md" target="_blank">investor-guide.md - Investor Guide</a>
+  </div>
+
+  <div class="category">
+    <h3>🔧 Contracts & Help</h3>
+    <a href="contracts-overview.md" target="_blank">contracts-overview.md - Smart Contracts Overview</a>
+    <a href="security.md" target="_blank">security.md - Security Measures</a>
+    <a href="FAQ.md" target="_blank">FAQ.md - Frequently Asked Questions</a>
+    <a href="glossary.md" target="_blank">glossary.md - Glossary of Terms</a>
+    <a href="CONTRIBUTING.md" target="_blank">CONTRIBUTING.md - How to Contribute</a>
+    <a href="STRUCTURE_GUIDELINES.md" target="_blank">STRUCTURE_GUIDELINES.md - Structure Guidelines</a>
+    <a href="LICENSE" target="_blank">LICENSE - MIT License</a>
+  </div>
+
+  <div class="category">
+    <h3>📄 Additional Documents</h3>
+    <a href="index.md" target="_blank">index.md - Main Page (Markdown)</a>
+    <a href="README.md" target="_blank">README.md - Repository Overview</a>
+    <a href="RELEASE_NOTES.md" target="_blank">RELEASE_NOTES.md - Release Notes</a>
+    <a href="شعار ناواه توكن (NWTK).png" target="_blank">Nawah Token Logo (NWTK).png</a>
+  </div>
+
 </div>
 
 <script>
@@ -52,5 +256,11 @@ function showSection(id) {
 }
 </script>
 
+<div class="footer">
+  <p>© 2026 منصة نواة - جميع الحقوق محفوظة</p>
+  <p><a href="https://github.com/nawahtkui/nawah-docs">GitHub Repository</a> | <a href="https://nawahtkui.github.io/nawah-docs/">الرئيسية</a></p>
+</div>
+
 </body>
 </html>
+
