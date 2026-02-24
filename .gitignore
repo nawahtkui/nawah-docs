@@ -1,1 +1,31 @@
+# الملفات المؤقتة
 *.save
+*.bak
+*.swp
+*.swo
+*~
+
+# مجلدات النظام
+.DS_Store
+Thumbs.db
+
+# ملفات البيئة (لا ترفع أبداً)
+.env
+.env.local
+.env.production
+
+# مجلدات التبعيات
+node_modules/
+vendor/
+
+# ملفات السجل
+*.log
+
+# مجلدات مؤقتة
+temp/
+tmp/
+
+# ملفات التحرير
+*.nano
+*.vim
+
